@@ -1,3 +1,51 @@
+@font-face {
+    font-family: 'cera_proregular';
+    src: url('../fonts/cerapro-regular-webfont.eot');
+    src: url('../fonts/cerapro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-regular-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-regular-webfont.woff') format('woff'),
+    url('../fonts/cerapro-regular-webfont.ttf') format('truetype'),
+    url('../fonts/cerapro-regular-webfont.svg#cera_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cera_problack';
+    src: url('../fonts/cerapro-black-webfont.eot');
+    src: url('../fonts/cerapro-black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-black-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-black-webfont.woff') format('woff'),
+    url('../fonts/cerapro-black-webfont.ttf') format('truetype'),
+    url('../fonts/cerapro-black-webfont.svg#cera_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cera_promedium';
+    src: url('../fonts/cerapro-medium-webfont.eot');
+    src: url('../fonts/cerapro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-medium-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-medium-webfont.woff') format('woff'),
+    url('../fonts/cerapro-medium-webfont.ttf') format('truetype'),
+    url('../fonts/cerapro-medium-webfont.svg#cera_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cera_probold';
+    src: url('../fonts/cerapro-bold-webfont.eot');
+    src: url('../fonts/cerapro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-bold-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-bold-webfont.woff') format('woff'),
+    url('../fonts/cerapro-bold-webfont.ttf') format('truetype'),
+    url('../fonts/cerapro-bold-webfont.svg#cera_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -109,7 +157,7 @@ input{
 
 
 .holder{
-    max-width: 1211px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -119,14 +167,19 @@ header{
 
 header nav, header nav li, header .logo{
     display: inline-block;
+    margin-top: 25px;
 }
 
 header ul{
     list-style: none;
 }
 
-header nav li a{
+header nav li a {
     text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    font-family: 'cera_proregular';
 
 }
 
@@ -136,19 +189,22 @@ header .logo{
 
 header .login {
     display: inline-flex;
-    margin-left: 370px;
+    margin-left: 350px;
+    margin-bottom: 20px;
     box-sizing: border-box;
     border-radius: 6px;
-    width: 100px;
+    padding: 15px 15px;
     height: 35px;
     background: #46a358;
-    font-weight: 500;
     font-size: 16px;
     color: #fff;
     text-align: center;
     justify-content: center;
     text-decoration: none;
     align-items: center;
+    font-weight: 500;
+    line-height: 125%;
+    font-family: 'cera_promedium';
 }
 
 header .login:before{
@@ -161,7 +217,9 @@ header .login:before{
 }
 
 header nav li{
+    display: inline-block;
     margin-right: 50px;
+
 }
 
 header nav li:last-of-type{
@@ -195,6 +253,7 @@ header nav li:hover:after{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 43px;
 }
 
 .banner article{
@@ -209,18 +268,18 @@ header nav li:hover:after{
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #3d3d3d;
-    padding-left: 43px;
     padding-bottom: 7px;
+    font-family: 'cera_promedium';
 }
-.banner article h1{
+.banner article h1 {
     font-weight: 900;
     font-size: 70px;
     line-height: 100%;
     text-transform: uppercase;
     color: #3d3d3d;
     display: inline-block;
-    padding-left: 40px;
     padding-bottom: 5px;
+    font-family: 'cera_problack';
 }
 
 .banner article h1 span{
@@ -233,15 +292,14 @@ header nav li:hover:after{
     font-size: 14px;
     line-height: 171%;
     color: #727272;
-    padding-left: 41px;
     padding-bottom: 49px;
+    font-family: 'cera_proregular';
 
 }
 
 .banner a{
     border-radius: 6px;
-    width: 140px;
-    height: 40px;
+    padding: 15px 20px;
     background: #46a358;
     font-weight: 700;
     font-size: 16px;
@@ -253,7 +311,8 @@ header nav li:hover:after{
     justify-content: center;
     text-decoration: none;
     align-items: center;
-    display: flex;
-    margin-left: 41px;
+    font-family: 'cera_probold';
 }
+
+
 
