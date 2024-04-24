@@ -382,6 +382,41 @@ header nav li:hover:after{
 .categories .right_content article{
     width: 258px;
     margin-bottom: 70px;
+    border-top: solid 1px transparent;
+    position: relative;
+}
+.categories .right_content article:hover ul{
+    opacity: 1;
+}
+
+.categories .right_content article ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 67px;
+    left: calc(50% - 62px);
+    width: 125px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.categories .right_content article ul li{
+    margin-right: 26px;
+}
+
+.categories .right_content article:hover{
+    border-top: solid 1px #46a358;
+}
+.categories .right_content article .sale{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #46a358;
+    padding: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
 }
 .right_content .flex_2 ul{
     display: flex;
@@ -441,6 +476,17 @@ header nav li:hover:after{
     margin-top: 6px;
 }
 
+.right_content article span.sale_1{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 89%;
+    color: #a5a5a5;
+    display: inline-block;
+    margin: 0;
+    border: none;
+    text-decoration: line-through;
+}
+
 .right_content article p{
     font-family: 'cera_proregular';
     text-decoration: none;
@@ -449,8 +495,50 @@ header nav li:hover:after{
     line-height: 100%;
     color: #3d3d3d;
     padding-bottom: 5px;
+    padding-top: 45px;
 }
+.categories .right_content .pagination{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.categories .right_content .pagination ul{
+    display: flex;
+    justify-content: space-between;
+}
+.categories .right_content .pagination ul li{
+    list-style: none;
+    margin-left: 10px;
+}
+.pagination a{
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+}
+.categories .pagination ul li:last-of-type:hover a svg path{
+    /*content: "";*/
+    /*display: inline-block;*/
+    /*width: 18px;*/
+    /*height: 18px;*/
+    /*background-image: url("../images/right_bottom.svg");*/
+    stroke: white!important;
 
+}
+.categories .pagination ul li:hover{
+    background-color: #46a358;
+}
+.categories .pagination ul li:hover a{
+    color: white;
+}
 
 
 
