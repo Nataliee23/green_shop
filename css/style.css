@@ -510,6 +510,10 @@ header nav li:hover:after{
 .categories .right_content .pagination ul li{
     list-style: none;
     margin-left: 10px;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
 }
 .pagination a{
     border: 1px solid #e5e5e5;
